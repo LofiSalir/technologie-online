@@ -1,1 +1,1 @@
-# technologie-online
+# technology-online
