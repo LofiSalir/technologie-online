@@ -1,0 +1,358 @@
+/*---------------------------------------------------------
+------------------------------------partie 1
+-----------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primarycolor: #27FF59;
+    --secondarycolor: #f7bcf7;
+    --lighcolot: whitesmoke;
+    --bgcolor-1: #171a1c;
+    --bgcolor-2: #22282a;
+    --padding: 8%;
+}
+
+html {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    color: var(--lighcolot);
+}
+
+h1 {
+    font-size: 4.65rem;
+    margin: 1.7rem 0;
+}
+
+h2 {
+/*---------------------------------------------------------
+----------------------7ajm 5otot maw9i3
+---------------------------------------------------------*/
+    font: size 2.2rem;
+    
+/*---------------------------------------------------------
+-------------------fara4e bayna a7erof kalimat
+---------------------------------------------------------*/
+    letter-spacing: 0.12rem;
+   
+/*---------------------------------------------------------
+---------------chakle raese 3ind tamrir fo9a 3anwan
+---------------------------------------------------------*/
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 1.5rem;
+
+/*---------------------------------------------------------
+---------------------------------fara4
+---------------------------------------------------------*/
+    margin-bottom: 3.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+    color: var(--secondarycolor);
+}
+
+h5{
+    font-size: 1.37rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+span {
+    color: var(--primarycolor);
+}
+
+p{
+    color: var(--secondarycolor);
+    letter-spacing: 3px;
+    line-height: 1.15rem;
+    font-size: 1rem;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgcolor-1);
+    display: flex;
+
+/*---------------------------------------------------------
+-------------------idhar 3anasir fo9 ba3diha
+---------------------------------------------------------*/
+    flex-direction: column;
+
+}
+
+/*---------------------------------------------------------
+----------------------3onwan maw9i3
+---------------------------------------------------------*/
+nav {
+
+/*---------------------------------------------------------
+----------------------fow9a saf7a
+---------------------------------------------------------*/
+    padding-top: 2.8rem;
+    position: sticky;
+    top: 0;
+
+/*---------------------------------------------------------
+----------------------jawanib saf7a
+---------------------------------------------------------*/
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+
+nav ul li a {
+    color: var(--lighcolot);
+
+/*---------------------------------------------------------
+-------------------7adf satre ta7te rawabit
+---------------------------------------------------------*/
+    text-decoration: none;
+
+/*---------------------------------------------------------
+-------------------ja3le kola a7erof kalimat kabira
+---------------------------------------------------------*/
+    text-transform: capitalize;
+
+/*---------------------------------------------------------
+----------------------sor3at ta4yor lawn
+---------------------------------------------------------*/
+    transform: 0.4s;
+}
+
+nav ul li a:hover {
+
+/*---------------------------------------------------------
+-----------------------ta4yor lawn kalimat
+---------------------------------------------------------*/
+    color: var(--primarycolor);
+}
+
+.btn {
+    background-color: var(--primarycolor);
+    color: var(--lighcolot);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+
+/*---------------------------------------------------------
+---------taw9if ta7rik Hover 3inda lams btn subscribe
+---------------------------------------------------------*/
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+
+/*---------------------------------------------------------
+-------------------transparent hiya chafafat
+---------------------------------------------------------*/
+    background-color: transparent;
+    border: 2px solid var(--primarycolor);
+}
+
+.content {
+
+/*---------------------------------------------------------
+-------------------takbir misa7a mot7a
+---------------------------------------------------------*/
+    flex-grow: 1;
+    padding: 17% var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-texts {
+    position: relative;
+    bottom: 70px;
+
+}
+
+/*---------------------------------------------------------
+--------------------------Sochial midia
+---------------------------------------------------------*/
+.social {
+    margin-top: 3.5rem;
+
+}
+
+.social img {
+    margin-right: 2rem;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}
+.home .container-images{
+    width: 40%;
+    height: 90%;
+    position: relative;
+    align-self: flex-end;
+}
+.home .container-images img{
+    position: absolute;
+    bottom: 0;
+    height: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+/*---------------------------------------------------------
+---------------------------partie 2
+---------------------------------------------------------*/
+
+
+/*---------------------------------------------------------
+---------------------------Image/Texts
+---------------------------------------------------------*/
+
+.about{
+    background-color: var(--bgcolor-2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .container-imges{
+    width: 35%;
+}
+
+.about .container-imges img{
+    width: 90%;
+}
+
+.about .container-texts{
+    width: 35%;
+}
+
+.services{
+    background-color: var(--bgcolor-1);
+    padding: 2rem var(--padding);
+}
+
+/*---------------------------------------------------------
+-----------------------------partie 3
+---------------------------------------------------------*/
+
+
+.text-center{
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 300px;
+    background-color: var(--bgcolor-2);
+    border-radius: 20px;
+    padding: 1.3rem 2rem;
+    text-align: center;
+}
+
+.card i{
+    font-size: 3.12rem;
+    text-align: center;
+    color: var(--primarycolor);
+    margin: 2rem;
+}
+
+/*---------------------------------------------------------
+-------------------------- partie 4
+---------------------------------------------------------*/
+
+/*---------------------------------------------------------
+--------------------------Image-1
+---------------------------------------------------------*/
+
+.skills{
+    background-color: var(--bgcolor-2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .container-imges{
+    width: 35%;
+}
+
+.skills .container-imges img{
+    width: 90%;
+}
+.skills .container-skill{
+    width: 40%;
+}
+.content-skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*---------------------------------------------------------
+---------------------------Image-2
+---------------------------------------------------------*/
+
+.skill{
+    width: 15%;
+    height: 7.5rem;
+    background-color: var(--lighcolot);
+    border-radius: 50%;
+    margin: 0 2rem 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill img{
+    width: 70%;
+}
+
+/*---------------------------------------------------------
+----------------------------partie 5
+---------------------------------------------------------*/
+
+footer{
+    padding: 2rem var(--padding);
+    background-color: var(--bgcolor-1);
+}
+
+footer .content-footer{
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .content-footer p{
+    color: var(--lighcolot);
+    text-align: center;
+    width: 500px;
+    margin-top: 1rem;
+}
+
+footer .content-footer{
+    color: var(--primarycolor);
+    margin-top: 1rem;
+}

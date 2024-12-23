@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit';
+    background: linear-gradient(#33ffa8,#cacaca );
+}
+/*---------------------------------------------------------
+--------------------------mawasata saf7a
+---------------------------------------------------------*/
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/*---------------------------------------------------------
+--------------------------espace bayna les nom
+---------------------------------------------------------*/
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+/*---------------------------------------------------------
+--------------------------titre
+---------------------------------------------------------*/
+.contact-left-title h2{
+    font-weight: 600;
+    color: black;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+/*---------------------------------------------------------
+--------------------------5at ta7t 3anwan
+---------------------------------------------------------*/
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+/*---------------------------------------------------------
+--------------------------5anat ta3emar
+---------------------------------------------------------*/
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+/*---------------------------------------------------------
+--------------------------message
+---------------------------------------------------------*/
+.contact-left textarea{
+    height: 140px;
+/*---------------------------------------------------------
+-------------------che7al deyal masaf makan message
+---------------------------------------------------------*/
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-left button{
+    display: flex;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+/*---------------------------------------------------------
+------------------masafa bayna kalimat 'submit' wa sahm
+---------------------------------------------------------*/
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#cacaca,#33ffa8 );
+    cursor: pointer;
+}
+.contact-left button img{
+    height: 15px;
+}
+.contact-right img{
+    width: 500px;
+
+}
